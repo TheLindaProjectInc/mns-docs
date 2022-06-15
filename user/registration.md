@@ -2,8 +2,8 @@
 title: Registration & Renewal of Names
 description: 
 published: true
-date: 2022-06-13T17:21:59.726Z
-tags: 
+date: 2022-06-15T00:40:06.549Z
+tags: user guides
 editor: markdown
 dateCreated: 2022-06-13T01:08:34.679Z
 ---
