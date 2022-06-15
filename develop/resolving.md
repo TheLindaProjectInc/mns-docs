@@ -2,8 +2,8 @@
 title: Resolving Names On-chain
 description: 
 published: true
-date: 2022-06-13T11:41:04.243Z
-tags: 
+date: 2022-06-15T00:39:45.502Z
+tags: developer guides
 editor: markdown
 dateCreated: 2022-06-13T11:41:02.577Z
 ---
