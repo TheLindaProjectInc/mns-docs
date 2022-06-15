@@ -2,8 +2,8 @@
 title: Writing a Registrar
 description: 
 published: true
-date: 2022-06-15T00:20:39.001Z
-tags: 
+date: 2022-06-15T00:39:28.026Z
+tags: developer guides
 editor: markdown
 dateCreated: 2022-06-13T11:32:46.125Z
 ---
