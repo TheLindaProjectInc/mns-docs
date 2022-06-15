@@ -2,8 +2,8 @@
 title: Writing a Resolver
 description: 
 published: true
-date: 2022-06-15T00:28:52.898Z
-tags: 
+date: 2022-06-15T00:39:11.099Z
+tags: developer guides
 editor: markdown
 dateCreated: 2022-06-13T11:28:44.514Z
 ---
