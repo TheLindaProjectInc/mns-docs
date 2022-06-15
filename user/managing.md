@@ -2,7 +2,7 @@
 title: Managing a Name
 description: 
 published: true
-date: 2022-06-15T00:57:29.261Z
+date: 2022-06-15T00:58:49.251Z
 tags: user guides
 editor: markdown
 dateCreated: 2022-06-13T12:10:35.806Z
@@ -24,7 +24,6 @@ While 'regular' resolution involves mapping from a name to an address, reverse r
 
 ![reverse-address.png](/reverse-address.png)
 
-Before this can be done, the owner of the address has to configure reverse resolution for their address. This is done by searching for the MetrixCoin or hexadecimal address to find the reverse name, and registering the name.
+Before this can be done, the owner of the address has to configure reverse resolution for their address. This is done by searching for the MetrixCoin or hexadecimal address to find the reverse name, and [registering the .addr.reverse name](/user/registration#addrreverse).
 
-![reverse-register.png](/reverse-register.png)
 
