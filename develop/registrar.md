@@ -2,7 +2,7 @@
 title: Writing a Registrar
 description: 
 published: true
-date: 2022-06-14T00:48:10.991Z
+date: 2022-06-15T00:20:39.001Z
 tags: 
 editor: markdown
 dateCreated: 2022-06-13T11:32:46.125Z
@@ -11,22 +11,41 @@ dateCreated: 2022-06-13T11:32:46.125Z
 A registrar in MNS is simply any contract that owns a name, and allocates subdomains of it according to some set of rules defined in the contract code. A trivial first in first served contract is demonstrated below:
 
 ```
-contract FIFSRegistrar {
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.4;
+
+import "@metrixnames/mns-contracts/contracts/registry/MNS.sol";
+
+contract HelloRegistrar {
     MNS mns;
     bytes32 rootNode;
 
-    constructor(address mnsAddr, bytes32 node) {
-        mns = MNS(mnsAddr);
+    modifier only_owner(bytes32 label) {
+        address currentOwner = mns.owner(
+            keccak256(abi.encodePacked(rootNode, label))
+        );
+        require(currentOwner == address(0x0) || currentOwner == msg.sender);
+        _;
+    }
+
+    /**
+     * Constructor.
+     * @param mnsAddr The address of the MNS registry.
+     * @param node The node that this registrar administers.
+     */
+    constructor(MNS mnsAddr, bytes32 node) {
+        mns = mnsAddr;
         rootNode = node;
     }
 
-    function register(bytes32 subnode, address owner) {
-        var node = sha3(rootNode, subnode);
-        var currentOwner = mns.owner(node);
-
-        if (currentOwner != 0 && currentOwner != msg.sender) throw;
-
-        mns.setSubnodeOwner(rootNode, subnode, owner);
+    /**
+     * Register a name, or change the owner of an existing registration.
+     * @param label The hash of the label to register.
+     * @param owner The address of the new owner.
+     */
+    function register(bytes32 label, address owner) public only_owner(label) {
+        mns.setSubnodeOwner(rootNode, label, owner);
     }
 }
 ```
