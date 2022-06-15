@@ -2,8 +2,8 @@
 title: Transferring & Claiming Names
 description: 
 published: true
-date: 2022-06-13T14:13:33.790Z
-tags: 
+date: 2022-06-15T00:40:35.273Z
+tags: user guides
 editor: markdown
 dateCreated: 2022-06-13T11:51:21.403Z
 ---
