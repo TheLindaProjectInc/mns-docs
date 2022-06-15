@@ -2,8 +2,8 @@
 title: Managing a Name
 description: 
 published: true
-date: 2022-06-13T17:06:42.252Z
-tags: 
+date: 2022-06-15T00:41:31.327Z
+tags: user guides
 editor: markdown
 dateCreated: 2022-06-13T12:10:35.806Z
 ---
