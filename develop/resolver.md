@@ -2,7 +2,7 @@
 title: Writing a Resolver
 description: 
 published: true
-date: 2022-06-13T11:28:46.351Z
+date: 2022-06-15T00:28:52.898Z
 tags: 
 editor: markdown
 dateCreated: 2022-06-13T11:28:44.514Z
@@ -33,12 +33,18 @@ Additionally, the content interface was used as a defacto standard for Swarm has
 A simple resolver that supports only the addr type might look something like this:
 
 ```
-contract SimpleResolver {
-    function supportsInterface(bytes4 interfaceID) constant returns (bool) {
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.4;
+
+
+contract HelloResolver  {
+    
+    function supportsInterface(bytes4 interfaceID) public pure returns (bool) {
         return interfaceID == 0x3b3b57de;
     }
 
-    function addr(bytes32 nodeID) constant returns (address) {
+    function addr(bytes32 /*nodeID*/) public view returns (address) {
         return address(this);
     }
 }
