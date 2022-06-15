@@ -2,7 +2,7 @@
 title: Managing a Name
 description: 
 published: true
-date: 2022-06-15T00:59:28.075Z
+date: 2022-06-15T01:22:01.479Z
 tags: user guides
 editor: markdown
 dateCreated: 2022-06-13T12:10:35.806Z
@@ -11,7 +11,7 @@ dateCreated: 2022-06-13T12:10:35.806Z
 # Updating Records
 To change the resources an address resolves to, it's necessary to update that name's records in its resolver.
 
-Each resolver may specify its own mechanism for updating records, but a standard method is implemented by the public resolver and many others.
+Each resolver may specify its own mechanism for updating records, but a standard method is implemented by the public resolver.
 
 Most commonly this is accomplished via a user-interface such as the [MNS App](https://metrix.domains/app).
 
