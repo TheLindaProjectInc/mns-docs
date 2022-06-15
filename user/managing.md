@@ -2,7 +2,7 @@
 title: Managing a Name
 description: 
 published: true
-date: 2022-06-15T00:58:49.251Z
+date: 2022-06-15T00:59:28.075Z
 tags: user guides
 editor: markdown
 dateCreated: 2022-06-13T12:10:35.806Z
@@ -15,7 +15,7 @@ Each resolver may specify its own mechanism for updating records, but a standard
 
 Most commonly this is accomplished via a user-interface such as the [MNS App](https://metrix.domains/app).
 
-Resolver data can be set from a name's detail page.
+Resolver data can be set by the owner of a name from the name's detail page.
 
 ![publicresolver.png](/publicresolver.png)
 
