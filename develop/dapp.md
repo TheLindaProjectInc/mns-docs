@@ -2,8 +2,8 @@
 title: MNS DApp Integration
 description: 
 published: true
-date: 2022-06-14T00:50:13.711Z
-tags: 
+date: 2022-06-15T00:38:19.732Z
+tags: developer guides
 editor: markdown
 dateCreated: 2022-06-13T10:41:48.080Z
 ---
